@@ -53,7 +53,7 @@ export default function Main() {
                 />
             }
             {loading && <p>Loading...</p>}
-            {recipe && <ClaudeRecipe recipe={recipe} />}
+            {!loading &&recipe && <ClaudeRecipe recipe={recipe} />}
         </main>
     )
 }
